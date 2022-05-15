@@ -9,7 +9,11 @@ use std::vec;
 // mod vectors;
 // mod conditionals;
 // mod loops;
-mod functions;
+// mod functions;
+// mod pointers;
+// mod structs;
+// mod enums;
+mod cli;
 fn main() {
     // print::run();
     // println!("Hello, world!");
@@ -21,5 +25,10 @@ fn main() {
     // vectors::run();
     // conditionals::run();
     // loops::run();
-    functions::run();
+    // functions::run();
+    // pointers::run();
+    // stru1cts::run();
+    // enums::run();
+    cli::run();
+
 }
