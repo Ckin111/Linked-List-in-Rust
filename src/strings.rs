@@ -24,7 +24,24 @@ pub fn run(){
     println!("Is Empty: {}", hello_mut.is_empty());
  
     // Contains some sub string
-        
+    println!("Containes 'World' {} ", hello_mut.contains("World") ); // this returns a boolean true or false
+    
+    // Replace some sub string
+    println!("Replace: {}", hello_mut.replace("World", "There"));
+
+    // Loop through string by whitespace
+    for word in hello_mut.split_whitespace() {
+        println!("{}",word);
+    }
     
     println!("{}",hello_mut);
+    // Create a string with a certain capacity
+    let mut s = String::with_capacity(10);
+    s.push('a');
+    s.push('b');
+
+    // Assertion testing
+    assert_eq!(2,s.len());
+    assert_eq!(10,s.capacity());
+    println!("{}",s);
 }
